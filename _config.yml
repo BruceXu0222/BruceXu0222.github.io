@@ -1,17 +1,26 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
+title: Bruce Xu's personal website
+description: Bruce Xu's personal website
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-url: "https://BruceXu0222.github.io"
+url: "http://localhost:3000"
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
+username: Bruce Xu
+user_description: |
+  I am an MSCS student at UCLA, and I took my undergrad studies at UC Berkeley, double‑majoring in Computer Science and Statistics. I am open to software‑engineering, machine‑learning‑engineering, and data‑science/analyst roles.
+
+  Languages:  Proficient in Python, Java, SQL, C, Shell, bash, R; prior experience in C++, Go, Swift, JavaScript  
+  Frameworks and Tools: Git, Linux, Jenkins, JetBrains, AWS, MySQL, JUnit, Flask, PyTorch, TensorFlow, Pandas, NumPy, Scikit‑learn, React, Angular, Oracle, PowerBI, NLP, LLM, OOP, Tableau, Docker, Kubernetes, ZooKeeper, LaTeX, Microsoft Office (Excel, PowerPoint, etc), Data Visualization, Deep Learning
+
+  Glad to make connections and have a coffee chat to talk about opportunities.
+
+  Feel free to reach out by email: bruce.xu0222@gmail.com
+
+user_title: Software Developer, Machine Learning Engineer
+email: bruce.xu0222@gmail.com
 twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
+github_username:  brucexu0222
 gplus_username:  lorem_ipsum
 
 # Google-analytics
