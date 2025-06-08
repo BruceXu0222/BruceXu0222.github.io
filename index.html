@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13963e70d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer/Machine Learning Engineer</p>
+            <h1>Hi, I'm <span>Bruce(Yihua) Xu</span><br>, an aspiring software/machine learning engineer from China</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/life.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a developer with a solid background in computer science and software engineering, specializing in cloud computing, database optimization, machine learning, and full-stack development. I am proficient in programming languages such as Python, Java, SQL, and C, and experienced with cloud technologies including AWS, GCP, Docker, and Kubernetes. I also have hands-on experience in deep learning (using PyTorch and TensorFlow) and database management (MySQL and PostgreSQL).<br>
+
+                    Through both academic and engineering practice, I have accumulated extensive R&D experience. At Turing Medical, I was responsible for deploying and optimizing a cloud platform for medical image analysis; at Merck, I contributed to the development of an AI-based quality control system; and at ZTE, I worked on database optimization, significantly improving storage and query efficiency. Additionally, I have participated in cutting-edge AI research at Carnegie Mellon University and published a paper at ICML 2024.<br>
+                    
+                    I have strong skills in project development, optimization, and system architecture, and I excel at solving complex technical problems efficiently. I am passionate about exploring new technologies, especially in the intersection of cloud computing and AI, such as serverless computing optimization, database tuning, and distributed system performance enhancement. I am a fast learner, capable of advancing projects efficiently both in collaborative teams and independently, and I am committed to using technology to solve real-world problems and drive innovation and improvement.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Proficient in Python, Java, SQL, C, Shell, Bash, R, prior experience in Go, JavaScript, C++, Swift</li>
+                        <li><span>Frameworks and Tools</span><br>Git, Linux, Jenkins, AWS, Jira, CircleCI, MySQL, PostgreSQL, JUnit, Flask, PyTorch, TensorFlow, GCP (Google Cloud Platform), Pandas, Numpy, Scikit-learn, React, Angular, Oracle, PowerBI, LLM, OOP, Tableau, Docker, Kubernetes, CUDA, GPU, Spark, ZooKeeper, LaTex, Data Visualization, Deep Learning, Transformer, Visual Studios Code, PyCharm, Confluence</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024/05 - 2024-08</span><br>Software Engineer Intern at Turing Medical</li>
+                        <li><span>2023/07 - 2024-03</span><br>Research Assistant at Carnegie Mellon University</li>
+                        <li><span>2023/01 - 2024-01</span><br>Histopathology Project Partner at Merck</li>
+                        <li><span>2024/05 - 2024-08</span><br>Database Development Engineer at ZTE</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020/08 - 2024-05</span><br>Computer Science B.A. and Statistics B.A. at UC Berkeley</li>
+                        <li><span>2024/09 - 2026-06(expected)</span><br>M.S. in Computer Science at UCLA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------experiences-------------- -->
+ <div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="experiences-list">
+            <div>
+                <img src="images/experience1.png" alt="">
+                <h2>Turing Medical</h2>
+                <h3>Software Engineer Intern</h3>
+                <p> • Deployed the cloud infrastructure of BullsAi, a brain mapping pipeline in precision targeting for neuromodulation therapy from MRI/fMRI images. Employed automatic data processing and partitioning to AWS (S3 bucket) to ensure anonymity of client data on cloud resources. Utilized CircleCI for CI/CD and Jira for Agile development.<br><br>
+                    • Migrated the functionalities, algorithms, and test utilities for the cloud communication section of BullsAi V2. Improved the scalability of cloud infrastructure with the patient data portal by developing a unified service module for external service connection.<br><br>
+                    • Initiated Metabase project to create synchronous data visualization for AWS databases, enabling internal users to monitor the status of job tickets. Embedded interactive dashboards on official website for BullsAi commercialization.</p>
+                <a href="https://turingmedical.com/">Learn more</a>
+            </div>
+            <div>
+                <img src="images/experience2.png" alt="">
+                <h2>Merck</h2>
+                <h3>Histopathology Project Partner</h3>
+                <p> • Developed and enhanced the HistoQC python library to automate the detection and segmentation of regional artifacts on whole slide images, including tissue tearing, folding, blurring, pen markers, air bubbles, etc.<br><br>
+                    • Created comprehensive QC (Quality Control) matrices for identified artifacts. Utilized PyTorch and Scikit-learn to implement deep-learning structures like UNet and AlexNet, boosting the quality of artifact segmentation to industry-level standards. Launched and operated HistoQC in Docker on Savio super clusters to resolve environment conflicts.</p>
+                <a href="https://www.merck.com/">Learn more</a>
+            </div>
+            <div>
+                <img src="images/experience3.png" alt="">
+                <h2>ZTE</h2>
+                <h3>Database Development Engineer Intern</h3>
+                <p> • Maintained normal operations of GoldenDB databases (PostgreSQL based), including fixing bugs, adding new features, and updating the internal database management platform regularly. Monitored database operation status with Jenkins.<br><br>
+                    • Shortened the response latency of several database operations by optimizing SQL statements. Adopted Prometheus framework on GoldenDB to automatically retrieve system and time series information from database servers, achieving 50%+ improvement in the storage and latency metrics of Insight alarm system.</p>
+                <a href="https://www.ztedevices.com/en/">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<!-- ------------research-------------- -->
+ <div id="research">
+    <div class="container">
+        <h1 class="sub-title">My Research</h1>
+        <div class="research-list">
+            <div class="research">
+                <img src="images/research.png"> 
+                <div class="layer">
+                    <h3>Accelerating RAG</h3>
+                    <P>Accelerating Iterative Retrieval-augmented Language Model Serving with Speculation</P>
+                    <a href="https://arxiv.org/abs/2401.14021"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- ------------projects-------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/project1.png"> 
+                <div class="layer">
+                    <h3>Reducing Hallucination in MLLMs (Multimodal Large Language Model)</h3>
+                    <a href="https://github.com/ruichenZz/cs263-final-project.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.png"> 
+                <div class="layer">
+                    <h3>RookieDB</h3>
+                    <a href="https://github.com/BruceXu0222/Project-DB.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bruce.xu0222@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1(510)289-4146</p>
+                <div class="social-icons">
+                    <a href="https://github.com/BruceXu0222"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yihua-bruce-xu-9a37381a5/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bruce_xu123?igsh=MWdpd2Z5czVkcmVuMg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-resume.pdf" download class="btn btn2">Download Resume/CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <p class="copyright">Copyright @ Bruce Xu</p>
+    </div>
+</div>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw0T-gL9VwOL77MvzY2wb5NOoDjfSBvGAN6aM70OYB6XLB4dVVjTEGDcBbeiKvdeCWi/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Disable button and update text
+    submitButton.disabled = true;
+    submitButton.innerText = "Submitting...";
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "✅ Message sent successfully!";
+        form.reset();
+        submitButton.disabled = false;
+        submitButton.innerText = "Submit";
+        setTimeout(() => {
+          msg.innerHTML = "";
+        }, 5000);
+      })
+      .catch(error => {
+        msg.innerHTML = "❌ Submission failed. Try again.";
+        submitButton.disabled = false;
+        submitButton.innerText = "Submit";
+      });
+  });
+</script>
+
+</body>
+</html>
